@@ -54,6 +54,15 @@ m1.metric("Avg Degradation", "80.9%", "Keratin Efficiency")
 m2.metric("Seed Germination", "77.2%", "Biofertilizer Effect")
 m3.metric("Growth Improvement", "72.3%", "Crop Yield")
 m4.metric("Bacillus Dominance", "90.5%", "Isolate Efficiency")
+st.markdown("---")
+st.subheader("🧬 Circular Bio-Economy & Microbial Valorization Pathway")
+st.info(
+    "**Step-by-Step Microbiological Process Framework:**\n\n"
+    "1. **Waste Generation:** Accumulation of recalcitrant $\\beta$-keratin-rich poultry feather waste in Telangana (~33,760 tonnes/year), causing severe environmental pollution and pathogen risks.\n\n"
+    "2. **Microbial Degradation:** Inoculation with specialized *Bacillus* strains (e.g., *Bacillus subtilis*, *Bacillus licheniformis*) that secrete extracellular **keratinase enzymes** to cleave rigid disulfide bonds ($-S-S-$) in keratin.\n\n"
+    "3. **Amino Acid / Biofertilizer Conversion:** Enzymatic breakdown of insoluble feather keratin into soluble oligopeptides, free amino acids, and ammonia, formulating nutrient-rich PGPB biofertilizers.\n\n"
+    "4. **Sustainable Agriculture:** Application of the biofertilizer to regional crops, significantly enhancing root elongation, soil microbial health, and boosting overall crop growth by ~72.3%."
+)
 
 
 st.success("✅ Dashboard is live and fully functional for your National Seminar Presentation!")
