@@ -63,6 +63,23 @@ st.info(
     "3. **Amino Acid / Biofertilizer Conversion:** Enzymatic breakdown of insoluble feather keratin into soluble oligopeptides, free amino acids, and ammonia, formulating nutrient-rich PGPB biofertilizers.\n\n"
     "4. **Sustainable Agriculture:** Application of the biofertilizer to regional crops, significantly enhancing root elongation, soil microbial health, and boosting overall crop growth by ~72.3%."
 )
+st.markdown("---")
+st.subheader("🔮 AI & Bio-Valorization Predictive Impact Simulator")
+st.markdown("Simulate the projected outcomes based on Telangana's poultry waste input and *Bacillus* strain efficiency:")
+
+# Interactive Slider for Waste Input
+waste_input = st.slider("Select Poultry Feather Waste Input (Tonnes):", min_value=1000, max_value=40000, value=15000, step=1000)
+
+# Predictive calculation logic
+est_keratin = waste_input * 0.90
+est_amino_acids = est_keratin * 0.809  # based on 80.9% degradation efficiency
+projected_crop_boost = min(75.0, 50.0 + (waste_input / 2000))
+
+# Display Predictions in columns
+col_p1, col_p2, col_p3 = st.columns(3)
+col_p1.metric("Predicted Keratin Yield", f"{est_keratin:,.0f} Tonnes", "90% Purity")
+col_p2.metric("Soluble Bio-Amino Acids", f"{est_amino_acids:,.0f} Tonnes", "Enzymatic Conversion")
+col_p3.metric("Projected Crop Growth Boost", f"{projected_crop_boost:.1f}%", "PGPB Enhanced")
 
 
 
