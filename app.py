@@ -47,5 +47,13 @@ fig_strain = px.bar(
     title="Comparison of PGPB Traits in Feather-Degrading Isolates"
 )
 st.plotly_chart(fig_strain, use_container_width=True)
+st.markdown("---")
+st.subheader("📈 Summary Metrics from Literature Review (50 Papers)")
+m1, m2, m3, m4 = st.columns(4)
+m1.metric("Avg Degradation", "80.9%", "Keratin Efficiency")
+m2.metric("Seed Germination", "77.2%", "Biofertilizer Effect")
+m3.metric("Growth Improvement", "72.3%", "Crop Yield")
+m4.metric("Bacillus Dominance", "90.5%", "Isolate Efficiency")
+
 
 st.success("✅ Dashboard is live and fully functional for your National Seminar Presentation!")
