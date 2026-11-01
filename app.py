@@ -35,5 +35,17 @@ fig = px.bar(
     title="Feather Waste Accumulation & Pathogen Risk Index in Telangana"
 )
 st.plotly_chart(fig, use_container_width=True)
+st.markdown("---")
+st.subheader("🔬 PGPB Traits Frequency Across Bird Sources")
+strain_data = pd.DataFrame({
+    'Source & Strain': ['Poultry Bacillus', 'Poultry Pseudomonas', 'Wild Bird Bacillus', 'Wild Bird Enterobacter', 'Other Avian Strains'],
+    'Frequency': [45, 30, 25, 15, 10]
+})
+fig_strain = px.bar(
+    strain_data, x='Source & Strain', y='Frequency',
+    color='Frequency', color_continuous_scale='Greens',
+    title="Comparison of PGPB Traits in Feather-Degrading Isolates"
+)
+st.plotly_chart(fig_strain, use_container_width=True)
 
 st.success("✅ Dashboard is live and fully functional for your National Seminar Presentation!")
