@@ -80,6 +80,40 @@ col_p1, col_p2, col_p3 = st.columns(3)
 col_p1.metric("Predicted Keratin Yield", f"{est_keratin:,.0f} Tonnes", "90% Purity")
 col_p2.metric("Soluble Bio-Amino Acids", f"{est_amino_acids:,.0f} Tonnes", "Enzymatic Conversion")
 col_p3.metric("Projected Crop Growth Boost", f"{projected_crop_boost:.1f}%", "PGPB Enhanced")
+st.markdown("---")
+st.subheader("🦠 Poultry Pathogen Risks & Advanced Keratin-To-Biofertilizer Calculator")
+
+# 1. Pathogens & Strains Infobox
+st.markdown(
+    "### ⚠️ Associated Poultry Pathogens & Degrading Strains\n"
+    "Untreated feather waste accumulates hazardous pathogens that pose severe biosecurity risks in poultry-dense regions like Telangana:\n"
+    "* **Key Pathogens & Infections:** *Salmonella enterica* (Salmonellosis), *Campylobacter jejuni* (Enteritis), *Avian Influenza Virus*, and *Aspergillus fumigatus* (Respiratory mycoses via fungal spore inhalation from decomposing feathers).\n"
+    "* **Effective Degrading Strains:** Keratinolytic strains such as *Bacillus subtilis*, *Bacillus licheniformis*, *Pseudomonas aeruginosa*, and *Streptomyces* species secrete extracellular keratinases that denature proteins, suppress pathogens, and convert waste safely."
+)
+
+st.markdown("---")
+st.markdown("### ⚖️ Kilograms Feather Input to Keratin & Fertilizer Prediction Calculator")
+st.markdown("Calculate exact keratin yield, amino acid conversion, and fertilizer nutrient impact based on feather weight (in Kilograms):")
+
+# Interactive Slider for Kg Input
+kg_input = st.number_input("Enter Feather Waste Weight (in Kilograms - kg):", min_value=10, max_value=100000, value=500, step=50)
+
+# Conversion metrics
+keratin_yield_kg = kg_input * 0.90       # ~90% pure keratin protein in feathers
+amino_acids_kg = keratin_yield_kg * 0.809  # ~80.9% enzymatic degradation efficiency
+npk_estimate = amino_acids_kg * 0.12     # Estimated organic nitrogen/nutrient contribution
+
+col_c1, col_c2, col_c3 = st.columns(3)
+col_c1.metric("Pure Keratin Mass", f"{keratin_yield_kg:,.1f} kg", "90% Protein Content")
+col_c2.metric("Soluble Amino Acid Yield", f"{amino_acids_kg:,.1f} kg", "Enzymatic Hydrolysate")
+col_c3.metric("Est. Organic Nitrogen (N)", f"{npk_estimate:,.1f} kg", "Biofertilizer Enricher")
+
+st.info(
+    "**🌾 How it Helps as a Biofertilizer:**\n"
+    "When raw feather keratin is broken down into soluble oligopeptides and free amino acids by *Bacillus* keratinases, "
+    "it serves as a slow-release organic nitrogen source. When applied to agricultural soils, it stimulates native Plant Growth-Promoting "
+    "Rhizobacteria (PGPB), improves soil water-retention capacity, and enhances root elongation—boosting overall crop growth by ~72.3%."
+)
 
 
 
