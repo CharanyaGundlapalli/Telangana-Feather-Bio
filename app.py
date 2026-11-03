@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 # Header
-st.title("🐔 Telangana Avian Waste, Infection Risk & AI Biofertilizer Dashboard")
+st.title("🐓 Telangana Avian Waste, Infection Risk & AI Biofertilizer Dashboard")
 st.markdown("### A Circular Bio-Economy Framework: Turning Avian Feather Waste into PGPB Biofertilizers")
 
 # 1. Telangana Poultry Overview Metrics
@@ -37,8 +37,8 @@ fig = px.bar(
 )
 st.plotly_chart(fig, use_container_width=True)
 
-# 2. Summary Metrics from Literature Review
-st.subheader("📈 Summary Metrics from Literature Review")
+# 2. Summary Metrics from Literature Review 
+st.subheader("📈 Summary Metrics from Literature Review, AI MODEL & BIOFERTILIZER EFFICACY")
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Avg Degradation", "80.9%", "Keratin Efficiency")
 m2.metric("Seed Germination", "77.2%", "Biofertilizer Effect")
