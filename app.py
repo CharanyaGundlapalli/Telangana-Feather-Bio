@@ -4,11 +4,34 @@ import plotly.express as px
 
 st.set_page_config(
     page_title="Telangana Avian Waste & PGPB Biofertilizer Dashboard",
+    page_icon="🐓",
     layout="wide"
 )
 
+st.title("🐓 Telangana Avian Waste, Infection Risk & AI Biofertilizer Dashboard")
+st.markdown("### A Circular Bio-Economy Framework: Turning Avian Feather Waste into PGPB Biofertilizers")
+
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Total Telangana Poultry", "92.5 Million", "High Density")
+col2.metric("Annual Feather Waste", "~33,760 Tonnes", "+5.4% YoY")
+col3.metric("Keratin Content in Waste", "~28,690 Tonnes", "90% Keratin")
+col4.metric("Avg Keratin Degradation", "80.9%", "Bacillus Strains")
+
+st.markdown("---")
+
 st.title("🔬 Telangana Avian Waste & PGPB Biofertilizer Dashboard")
 st.write("AI-Driven Bio-Valorization of Poultry Feather Waste in Telangana")
+
+# 1. Summary Metrics from Literature Review
+st.markdown("---")
+st.subheader("📈 Summary Metrics from Literature Review")
+m1, m2, m3, m4 = st.columns(4)
+m1.metric("Avg Degradation", "80.9%", "Keratin Efficiency")
+m2.metric("Seed Germination", "77.2%", "Biofertilizer Effect")
+m3.metric("Growth Improvement", "72.3%", "Crop Yield")
+m4.metric("Bacillus Dominance", "90.5%", "Isolate Efficiency")
+
+)
 
 # 1. Summary Metrics from Literature Review
 st.markdown("---")
@@ -132,7 +155,7 @@ st.plotly_chart(fig_strain, use_container_width=True)
 
 # 3. Poultry Pathogens & Infection Risks Section
 st.markdown("---")
-st.subheader("🦠 Poultry Pathogen Risks & Effective Bacterial Strains")
+st.subheader("🦠 Poultry Feather Pathogen Risks & Effective Bacterial Strains")
 st.warning(
     "**⚠️ Associated Pathogens & Infection Hazards:**\n"
     "Untreated poultry feather waste in dump yards harbors severe biosecurity and environmental risks in Telangana:\n"
@@ -156,9 +179,3 @@ col_c1.metric("Pure Keratin Mass", f"{keratin_yield_kg:,.1f} kg", "90% Protein C
 col_c2.metric("Soluble Amino Acids", f"{amino_acids_kg:,.1f} kg", "Enzymatic Hydrolysate")
 col_c3.metric("Est. Organic Nitrogen (N)", f"{npk_estimate:,.1f} kg", "Soil Enricher")
 
-st.info(
-    "**🌾 How it Helps as a Biofertilizer:**\n"
-    "Microbial enzymatic degradation converts insoluble recalcitrant feather keratin into soluble oligopeptides and free amino acids. "
-    "When applied to agricultural soils, it functions as a slow-release organic nitrogen fertilizer, activates native plant growth-promoting rhizosphere microflora, "
-    "improves soil moisture retention, and boosts overall crop growth by ~72.3%."
-)
