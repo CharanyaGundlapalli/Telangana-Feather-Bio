@@ -64,7 +64,6 @@ st.markdown("---")
 
 # 4. Target Crops & Plants Benefited
 st.subheader("🌱 Target Crops & Plants Benefited by Feather Biofertilizers")
-st.markdown("Based on literature review, application of keratin-hydrolysate PGPB biofertilizers significantly enhances the growth, root elongation, and yield of these key regional crops:")
 
 plant_data = pd.DataFrame({
     'Crop / Plant': ['Maize (Zea mays)', 'Rice (Oryza sativa)', 'Tomato (Solanum lycopersicum)', 'Wheat (Triticum aestivum)', 'Leafy Vegetables'],
@@ -80,8 +79,8 @@ st.plotly_chart(fig_plant, use_container_width=True, key="plant_chart_unique")
 
 st.markdown("---")
 
-# 5. Poultry Pathogens & Infection Risks (Pie Chart)
-st.subheader("🦠 Poultry Pathogens & Biosecurity Risk Distribution")
+# 5. Poultry Feather Pathogens & Infection Risks (Pie Chart)
+st.subheader("🦠 Poultry Feather Pathogens & Biosecurity Risk Distribution")
 pathogen_data = pd.DataFrame({
     'Pathogen & Infection': [
         'Salmonella enterica (Salmonellosis)', 
