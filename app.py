@@ -31,8 +31,6 @@ m2.metric("Seed Germination", "77.2%", "Biofertilizer Effect")
 m3.metric("Growth Improvement", "72.3%", "Crop Yield")
 m4.metric("Bacillus Dominance", "90.5%", "Isolate Efficiency")
 
-)
-
 # 1. Summary Metrics from Literature Review
 st.markdown("---")
 st.subheader("📈 Summary Metrics from Literature Review")
