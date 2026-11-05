@@ -56,7 +56,7 @@ strain_data = pd.DataFrame({
 fig_strain = px.bar(
     strain_data, x='Source & Strain', y='Frequency',
     color='Frequency', color_continuous_scale='Greens',
-    title="Comparison of PGPB Traits in Feather-Degrading Isolates"
+    title="Comparison of PGPB Strain in Feather-Degrading Isolates"
 )
 st.plotly_chart(fig_strain, use_container_width=True, key="strain_chart_unique")
 
