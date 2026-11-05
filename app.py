@@ -47,8 +47,8 @@ m4.metric("Bacillus Dominance", "90.5%", "Isolate Efficiency")
 
 st.markdown("---")
 
-# 3. PGPB Traits Frequency Bar Chart
-st.subheader("🔬 PGPB Traits Frequency Across Bird Sources")
+# 3. PGPB Strains Frequency Bar Chart
+st.subheader("🔬 PGPB Strains Frequency Across Bird Sources")
 strain_data = pd.DataFrame({
     'Source & Strain': ['Poultry Bacillus', 'Poultry Pseudomonas', 'Wild Bird Bacillus', 'Wild Bird Enterobacter', 'Other Avian Strains'],
     'Frequency': [45, 30, 25, 15, 10]
